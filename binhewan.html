@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>滨荷湾旅游景区 — 前詹·印象</title>
+<meta name="description" content="滨荷湾坐拥滨海岸线，海湾蜿蜒如月、海水澄澈见底，夏季沿岸荷花竞相绽放，荷香与海风交织，可漫步沙滩、静赏落霞。">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/mockup.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
+</head>
+<body class="page-detail">
+
+<div class="m-topbar"><div class="container">
+  <a href="index.html" class="m-brand"><span class="m-brand-dot">前</span>全景前詹</a>
+  <div class="m-top-links"><a href="index.html">返回首页</a><a href="index.html">首页</a></div>
+</div></div>
+
+<nav class="m-nav"><div class="container">
+  <div class="m-nav-links">
+    <a href="index.html">首页</a>
+    <a href="map.html">文旅地图</a>
+    <a href="rongshi.html" class="active">景点详情</a>
+    <a href="economy.html">特色经济</a>
+    <a href="politics.html">廉政文化</a>
+    <a href="sanxiaxiang.html">三下乡实践</a>
+    <a href="index.html#about">联系我们</a>
+  </div>
+  <span class="m-pill">景点详情</span>
+</div></nav>
+
+<section class="dtl-stage" style="--dtl-side:url('images/tour-binhewan.jpg')">
+  <div class="dtl-wrap">
+    <div class="dtl-hero">
+      <a class="dtl-back" href="map.html">← 返回文旅地图</a>
+      <img src="images/tour-binhewan.jpg" alt="滨荷湾旅游景区" loading="eager">
+    </div>
+    <div class="dtl-card">
+      <div class="dtl-col">
+        <h1 class="dtl-name">滨荷湾旅游景区</h1>
+        <div class="dtl-slogan">前詹镇荷香海风交织的滨海风光名景点</div>
+        <div class="dtl-block"><h4>景点介绍</h4><p>滨荷湾坐拥滨海岸线，海湾蜿蜒如月、海水澄澈见底，夏季沿岸荷花竞相绽放，荷香与海风交织，可漫步沙滩、静赏落霞。</p></div>
+        <div class="dtl-block"><h4>特色看点</h4><p>观海栈道、荷花观赏区、滨海浴场、夕阳观景台。</p></div>
+        <div class="dtl-block"><h4>游览建议</h4><p>建议在清晨或傍晚游览，感受海浪、沙滩与日出日落的层次变化。</p></div>
+      </div>
+      <div class="dtl-col dtl-mid">
+        <h2 class="dtl-name">滨荷湾旅游景区 ·</h2>
+        <div class="dtl-slogan">荷 香 海 湾 · 碧 波 荡 漾</div>
+        <p>滨荷湾是前詹镇最负盛名的滨海旅游景区，位于前詹镇南部沿海，坐拥南海之滨得天独厚的自然禀赋。这里海湾蜿蜒如月、海水澄澈见底，岸线绵延长达数公里。最令人称奇的是，夏季时节沿岸大片荷花池竞相绽放，粉白相间的荷塘与碧蓝的大海交相辉映——“滨荷湾”之名正是由此而来。</p>
+      </div>
+      <div class="dtl-col">
+        <div class="dtl-thumbs dtl-thumbs-4"><div class="dtl-thumb"><img src="images/tour-binhewan.jpg" alt="航拍全景" loading="lazy"><span>航拍全景</span></div><div class="dtl-thumb"><img src="images/binhewan-lotus.jpg" alt="荷花池" loading="lazy"><span>荷花池</span></div><div class="dtl-thumb"><img src="images/binhewan-sunset.jpg" alt="日落" loading="lazy"><span>日落</span></div><div class="dtl-thumb"><img src="images/binhewan-night.jpg" alt="夜景" loading="lazy"><span>夜景</span></div></div>
+      </div>
+    </div>
+
+    <!-- 3D 建模实景浏览 -->
+    <section class="dtl-3d" id="panorama">
+      <div class="dtl-3d-head">
+        <h2>滨荷湾建模全景<small>3 D 场 景 浏 览</small></h2>
+        <div class="dtl-3d-tabs">
+          <a class="dtl-3d-tab active" href="#panorama" data-src="models/binhewan-park.glb">海滨公园</a>
+          <a class="dtl-3d-tab" href="#panorama" data-src="models/binhewan-statue.glb">海边雕像</a>
+        </div>
+      </div>
+      <div class="dtl-3d-stage">
+        <div class="dtl-3d-orbit"></div>
+        <div class="dtl-3d-glow"></div>
+        <model-viewer
+          id="bh-model"
+          src="models/binhewan-park.glb"
+          alt="滨荷湾三维建模"
+          camera-controls
+          auto-rotate
+          auto-rotate-delay="800"
+          rotation-per-second="12deg"
+          touch-action="pan-y"
+          shadow-intensity="1"
+          exposure="1"
+          loading="lazy"
+          style="position:relative;z-index:2;width:100%;height:min(62vh,520px);background:transparent;--poster-color:transparent">
+        </model-viewer>
+      </div>
+      <div class="dtl-3d-note">海滨公园 / 海边雕像两组建模实景 · 拖拽旋转 · 滚轮缩放 · 双指平移查看</div>
+    </section>
+
+    <div class="dtl-next-row"><a class="dtl-next" href="minghuyan.html">上一个景点</a></div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><h3>前詹·印象</h3><p>惠来县前詹镇</p></div><div><h4>研学路线</h4><ul><li><a href="lianzhenglang.html">廉政长廊</a></li><li><a href="chaohuaxin.html">潮华心</a></li><li><a href="baoyu.html">鲍鱼基地</a></li></ul></div><div><h4>文旅路线</h4><ul><li><a href="binhewan.html">滨荷湾</a></li><li><a href="minghuyan.html">铭湖岩</a></li><li><a href="rongshi.html">榕石生态园</a></li><li><a href="xianma.html">仙妈古庙</a></li></ul></div><div><h4>板块导航</h4><ul><li><a href="politics.html">廉政文化</a></li><li><a href="economy.html">特色经济</a></li><li><a href="index.html">首页</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 前詹·印象</p></div></div></footer>
+<script src="js/main.js"></script>
+<script type="module" src="js/model-viewer.min.js"></script>
+<script>
+  (function () {
+    var mv = document.getElementById('bh-model');
+    var tabs = document.querySelectorAll('.dtl-3d-tab');
+    if (!mv) return;
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function (e) {
+        e.preventDefault();
+        tabs.forEach(function (t) { t.classList.remove('active'); });
+        tab.classList.add('active');
+        if (tab.dataset.src) { mv.setAttribute('src', tab.dataset.src); }
+      });
+    });
+  })();
+</script>
+</body>
+</html>

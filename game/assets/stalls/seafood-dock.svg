@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" role="img" aria-labelledby="title desc">
+  <title id="title">海鲜码头</title>
+  <desc id="desc">带风帆顶棚的海鲜码头摊位</desc>
+  <path d="M10 149c39-14 64 10 104-2 43-12 78 8 136-3v28H10Z" fill="#c7ebea"/>
+  <path d="M31 139h198l12 30H20Z" fill="#d7ad69" stroke="#75512d" stroke-width="7"/>
+  <path d="M57 70h147v70H57Z" fill="#eff9f6" stroke="#164e57" stroke-width="7"/>
+  <path d="M43 72 68 29h125l25 43Z" fill="#137c8b" stroke="#164e57" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M75 31v39M103 31v39M131 31v39M159 31v39M188 31v39" stroke="#f4fbf9" stroke-width="7" opacity=".9"/>
+  <path d="M75 103h111v37H75Z" fill="#9ed9d2" stroke="#164e57" stroke-width="6"/>
+  <path d="M85 114c28 11 63 9 91-1" fill="none" stroke="#f4fbf9" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="47" cy="121" r="15" fill="#e96852" stroke="#164e57" stroke-width="5"/>
+  <circle cx="47" cy="121" r="6" fill="#f4fbf9"/>
+</svg>

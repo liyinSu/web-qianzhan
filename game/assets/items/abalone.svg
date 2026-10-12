@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="title desc">
+  <title id="title">前詹鲍鱼</title>
+  <desc id="desc">蓝绿色贝壳中的新鲜鲍鱼</desc>
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8ed8ca"/>
+      <stop offset=".5" stop-color="#267f88"/>
+      <stop offset="1" stop-color="#164e57"/>
+    </linearGradient>
+    <radialGradient id="meat" cx="45%" cy="40%" r="65%">
+      <stop offset="0" stop-color="#f8d88a"/>
+      <stop offset="1" stop-color="#d9973b"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="120" cy="92" rx="93" ry="62" transform="rotate(-8 120 92)" fill="url(#shell)" stroke="#103f47" stroke-width="8"/>
+  <ellipse cx="116" cy="92" rx="63" ry="39" transform="rotate(-8 116 92)" fill="#e8f5eb" stroke="#f4fbf9" stroke-width="6"/>
+  <path d="M82 91c8-24 30-34 53-25 22 9 34 29 25 47-9 18-40 28-64 16-17-9-20-23-14-38Z" fill="url(#meat)" stroke="#9e672c" stroke-width="5"/>
+  <path d="M95 92c13-13 34-14 50-3M96 108c16 8 33 7 48-2" fill="none" stroke="#bf7a32" stroke-width="5" stroke-linecap="round" opacity=".65"/>
+  <g fill="#f4fbf9" stroke="#164e57" stroke-width="3">
+    <circle cx="55" cy="76" r="5"/><circle cx="62" cy="58" r="5"/><circle cx="74" cy="45" r="5"/><circle cx="91" cy="38" r="5"/><circle cx="110" cy="35" r="5"/>
+  </g>
+  <path d="M184 38c12-9 24-5 25 8-11 4-20 1-25-8ZM192 128c17-6 27 4 22 18-13 0-20-6-22-18Z" fill="#73cbd4" opacity=".75"/>
+</svg>

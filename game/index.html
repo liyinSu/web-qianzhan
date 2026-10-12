@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f727f" />
+    <meta
+      name="description"
+      content="前詹向海·开市啦——认识前詹鲍鱼、海鲜、黑山羊和惠来绿豆饼的文旅拖拽小游戏。"
+    />
+    <title>前詹向海·开市啦</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#mainContent">跳到游戏内容</a>
+
+    <main class="app-shell" id="mainContent">
+      <section class="screen screen--start is-active" id="startScreen" aria-labelledby="gameTitle">
+        <div class="coastal-sky" aria-hidden="true">
+          <span class="sun"></span>
+          <span class="cloud cloud--one"></span>
+          <span class="cloud cloud--two"></span>
+        </div>
+
+        <header class="start-header">
+          <p class="location-mark">惠来 · 前詹镇一日游</p>
+          <h1 id="gameTitle"><span>前詹向海</span><strong>开市啦</strong></h1>
+          <p class="start-tagline">山海相伴，向海而行</p>
+        </header>
+
+        <div class="route-preview" aria-hidden="true">
+          <div class="route-line"></div>
+          <div class="route-stop route-stop--one"><span>栈道</span></div>
+          <div class="route-stop route-stop--two"><span>古岩</span></div>
+          <div class="route-stop route-stop--three"><span>榕树</span></div>
+          <div class="route-stop route-stop--four"><span>海滩</span></div>
+          <div class="route-stop route-stop--five"><span>鲍鱼</span></div>
+          <div class="wave-layer wave-layer--back"></div>
+          <div class="wave-layer wave-layer--front"></div>
+        </div>
+
+        <div class="start-action">
+          <p>45 秒，把前詹好物送到正确摊位</p>
+          <button class="primary-button start-button" id="startButton" type="button">
+            <span>开始游戏</span>
+            <svg viewBox="0 0 28 28" aria-hidden="true">
+              <path d="M10 7.5 19 14l-9 6.5Z" />
+            </svg>
+          </button>
+          <p class="gesture-hint">拖一拖就会玩 · 鼠标和触屏都支持</p>
+        </div>
+
+        <footer class="start-footer">
+          <span>5 个必打卡景点</span>
+          <span aria-hidden="true">·</span>
+          <span>4 样前詹好味</span>
+        </footer>
+      </section>
+
+      <section class="screen screen--game" id="gameScreen" aria-labelledby="gameHeading" hidden>
+        <header class="game-header">
+          <div>
+            <p class="game-eyebrow">前詹渔港 · 今日开市</p>
+            <h2 id="gameHeading">把好物送到正确摊位</h2>
+          </div>
+          <button class="icon-button" id="homeButton" type="button" aria-label="返回开始页">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 11.5 12 5l8 6.5v7.25a1.25 1.25 0 0 1-1.25 1.25H5.25A1.25 1.25 0 0 1 4 18.75Z" />
+              <path d="M9.5 20v-6h5v6" />
+            </svg>
+          </button>
+        </header>
+
+        <div class="status-ribbon" aria-label="游戏状态">
+          <div class="status-cell">
+            <span>剩余</span>
+            <strong id="timeValue">45</strong>
+            <small>秒</small>
+          </div>
+          <div class="status-divider" aria-hidden="true"></div>
+          <div class="status-cell status-cell--score">
+            <span>鱼获分</span>
+            <strong id="scoreValue">0</strong>
+          </div>
+          <div class="status-divider" aria-hidden="true"></div>
+          <div class="status-cell">
+            <span>连击</span>
+            <strong id="streakValue">×1</strong>
+          </div>
+        </div>
+
+        <div class="feedback" id="feedback" role="status" aria-live="polite">
+          看清货物，再拖到对应摊位
+        </div>
+
+        <section class="cargo-zone" aria-labelledby="cargoHeading">
+          <div class="cargo-caption">
+            <h3 id="cargoHeading">今日到港</h3>
+            <span id="cargoProgress">1 / 12</span>
+          </div>
+          <div class="tide-track" aria-hidden="true"><span></span></div>
+          <div
+            class="cargo-card"
+            id="cargoCard"
+            role="button"
+            tabindex="0"
+            aria-describedby="cargoInstruction"
+          >
+            <div class="cargo-glow" aria-hidden="true"></div>
+            <img id="cargoImage" src="assets/items/abalone.svg" alt="前詹鲍鱼" width="240" height="180" />
+            <div class="cargo-copy">
+              <strong id="cargoName">前詹鲍鱼</strong>
+              <span id="cargoClue">养殖排上的招牌海味</span>
+            </div>
+            <svg class="drag-grip" viewBox="0 0 28 28" aria-hidden="true">
+              <circle cx="9" cy="9" r="2"/><circle cx="19" cy="9" r="2"/>
+              <circle cx="9" cy="19" r="2"/><circle cx="19" cy="19" r="2"/>
+            </svg>
+          </div>
+          <p id="cargoInstruction">按住货物拖动，或用下方“快捷投递”按钮选择摊位。</p>
+        </section>
+
+        <section class="market-zone" aria-labelledby="marketHeading">
+          <div class="market-heading">
+            <h3 id="marketHeading">前詹小集市</h3>
+            <span>选对摊位有连击加成</span>
+          </div>
+          <div class="stalls" id="stalls"></div>
+        </section>
+
+        <div class="time-progress" aria-label="倒计时进度">
+          <span id="timeProgress"></span>
+        </div>
+      </section>
+
+      <section class="screen screen--result" id="resultScreen" aria-labelledby="resultTitle" hidden>
+        <div class="result-confetti" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <header class="result-header">
+          <p>今日前詹开市榜</p>
+          <h2 id="resultTitle">前詹金牌摊主</h2>
+          <span id="resultSubtitle">山海好物，都被你安排得明明白白</span>
+        </header>
+
+        <div class="result-score-card">
+          <div class="result-score-main">
+            <span>本次鱼获分</span>
+            <strong id="finalScore">0</strong>
+          </div>
+          <dl class="result-stats">
+            <div><dt>正确投递</dt><dd id="correctCount">0</dd></div>
+            <div><dt>最佳连击</dt><dd id="bestStreak">0</dd></div>
+            <div><dt>正确率</dt><dd id="accuracyValue">0%</dd></div>
+          </dl>
+        </div>
+
+        <section class="tour-route" aria-labelledby="routeHeading">
+          <div class="route-title-row">
+            <div>
+              <p>把游戏里的海风带到真实旅程</p>
+              <h3 id="routeHeading">前詹一日游 · 5 站路线</h3>
+            </div>
+            <span>自驾更方便</span>
+          </div>
+          <ol class="tour-stops">
+            <li><b>01</b><span><strong>滨荷湾旅游景区</strong><small>临海栈道 · 荷塘礁石 · 风车</small></span></li>
+            <li><b>02</b><span><strong>铭湖岩</strong><small>岩洞古庙 · 摩崖石刻</small></span></li>
+            <li><b>03</b><span><strong>榕石生态园</strong><small>百年榕树抱石 · 黑山羊</small></span></li>
+            <li><b>04</b><span><strong>仙妈古庙海滩</strong><small>浅滩 · 礁石 · 风车海景</small></span></li>
+            <li><b>05</b><span><strong>前詹鲍鱼养殖基地</strong><small>乘船出海 · 鲍鱼养殖排</small></span></li>
+          </ol>
+        </section>
+
+        <p class="eco-note">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 4.5C12 4.7 7.5 8 7.5 13.5c0 2.7 1.8 5 4.5 5 5.5 0 8-5.2 7.5-14ZM4 20c2.6-5.8 6.5-9.6 12-12"/></svg>
+          文明出游，垃圾不乱扔，一起保护海洋生态
+        </p>
+
+        <div class="result-actions">
+          <button class="primary-button" id="replayButton" type="button">再玩一次</button>
+          <button class="secondary-button" id="resultHomeButton" type="button">回到首页</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="drag-ghost" id="dragGhost" aria-hidden="true"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

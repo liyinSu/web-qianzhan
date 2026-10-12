@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" role="img" aria-labelledby="title desc">
+  <title id="title">鲍鱼养殖排</title>
+  <desc id="desc">海上鲍鱼养殖排与分拣台</desc>
+  <path d="M8 146c34-13 63 11 98-2 39-15 76 12 146-5v33H8Z" fill="#bde8e4"/>
+  <path d="M8 154c40-16 69 10 105-1 39-12 70 7 139-5" fill="none" stroke="#4daab2" stroke-width="6" stroke-linecap="round"/>
+  <path d="M29 117h205l-17 31H45Z" fill="#2f8d94" stroke="#164e57" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M48 119v28M92 119v31M136 119v31M180 119v29M221 119v22" stroke="#f4fbf9" stroke-width="4" opacity=".8"/>
+  <path d="M58 47h145v75H58Z" fill="#e8f5eb" stroke="#164e57" stroke-width="7"/>
+  <path d="M47 48 76 20h109l29 28Z" fill="#137c8b" stroke="#164e57" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M80 78h102v44H80Z" fill="#e5b35c" stroke="#8b5a24" stroke-width="6"/>
+  <ellipse cx="131" cy="93" rx="31" ry="16" fill="#2e7d78" stroke="#164e57" stroke-width="5"/>
+  <ellipse cx="131" cy="91" rx="19" ry="9" fill="#e5bd6d"/>
+  <circle cx="45" cy="140" r="10" fill="#f3b33d" stroke="#164e57" stroke-width="5"/>
+  <circle cx="218" cy="140" r="10" fill="#e96852" stroke="#164e57" stroke-width="5"/>
+</svg>

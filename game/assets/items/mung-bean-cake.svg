@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="title desc">
+  <title id="title">惠来绿豆饼</title>
+  <desc id="desc">两枚金黄色绿豆饼</desc>
+  <defs>
+    <radialGradient id="cake" cx="42%" cy="35%" r="70%"><stop offset="0" stop-color="#ffe17a"/><stop offset="1" stop-color="#d99a31"/></radialGradient>
+  </defs>
+  <ellipse cx="86" cy="105" rx="57" ry="43" fill="url(#cake)" stroke="#a96b22" stroke-width="7"/>
+  <ellipse cx="86" cy="97" rx="57" ry="43" fill="#f3bd4a" stroke="#a96b22" stroke-width="7"/>
+  <ellipse cx="86" cy="97" rx="41" ry="29" fill="none" stroke="#ffe093" stroke-width="5" stroke-dasharray="4 7"/>
+  <path d="M126 62c20-19 55-16 73 4 18 20 15 48-7 62-22 14-57 6-72-15-13-19-11-36 6-51Z" fill="#f4c65f" stroke="#a96b22" stroke-width="7"/>
+  <path d="M133 71c18-13 42-9 54 6 11 14 8 31-7 39-17 9-40 2-49-13-8-13-7-23 2-32Z" fill="#b8cc78" stroke="#789451" stroke-width="5"/>
+  <path d="M61 97h50M86 73v49M144 83c13 2 24 10 31 22" fill="none" stroke="#d89730" stroke-width="4" stroke-linecap="round" opacity=".75"/>
+</svg>

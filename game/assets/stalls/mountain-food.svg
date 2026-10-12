@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" role="img" aria-labelledby="title desc">
+  <title id="title">山野食集</title>
+  <desc id="desc">榕叶顶棚下的山野食集摊位</desc>
+  <path d="M40 62c-27-18-10-49 17-36 5-26 42-29 53-5 19-26 53-10 52 12 24-21 57-3 52 23 25 8 23 37 0 45H49c-29-7-31-29-9-39Z" fill="#78bd8f" stroke="#287052" stroke-width="7"/>
+  <path d="M58 86h150v70H58Z" fill="#f2e4c7" stroke="#624d32" stroke-width="7"/>
+  <path d="M45 88h176L203 58H65Z" fill="#5faf7b" stroke="#287052" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M79 112h108v44H79Z" fill="#b9894f" stroke="#624d32" stroke-width="6"/>
+  <path d="M91 124h83" stroke="#f4d99a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M54 154h161" stroke="#164e57" stroke-width="8" stroke-linecap="round"/>
+  <path d="M32 151c20-23 42-14 50 9H24c1-3 4-6 8-9ZM207 154c14-25 38-22 47 3h-52c1-1 3-2 5-3Z" fill="#a7d5a0" stroke="#287052" stroke-width="5"/>
+</svg>

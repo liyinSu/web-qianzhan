@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520"><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe3f7"/><stop offset="1" stop-color="#eaf6ff"/></linearGradient><linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e86c1"/><stop offset="1" stop-color="#7fc4e8"/></linearGradient></defs>
+<rect width="800" height="300" fill="url(#sky)"/>
+<circle cx="640" cy="96" r="46" fill="#ffd97d" opacity="0.9"/>
+<rect y="300" width="800" height="160" fill="url(#sea)"/>
+<path d="M0 330 Q200 310 400 330 T800 330 L800 360 Q600 345 400 360 T0 360 Z" fill="#ffffff" opacity="0.35"/>
+<path d="M0 460 Q200 430 420 458 T800 452 L800 520 L0 520 Z" fill="#f2e2c4"/>
+<path d="M120 300 l70 0 -14 34 -42 0 z" fill="#c94f4f"/><path d="M155 300 l0 -46 38 22 -38 6" fill="#8d3a3a"/></svg>
